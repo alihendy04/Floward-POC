@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "@testing-library/testcafe": "^4.4.1",
+    "testcafe": "^1.20.1",
+    "testcafe-reporter-allure": "^1.0.5"
+  },
+  "name": "flowardpoc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "testcafe": "testcafe",
+    "test": "npm run testcafe chrome tests/",
+    "all": "npm run testcafe -- -c 2 chrome:headless tests/",
+    "safari": "npm run testcafe safari tests/",
+    "firefox": "npm run testcafe firefox tests/",
+    "browsers": "npm run testcafe -- -b browserstack",
+    "ie": "npm run testcafe 'browserstack:ie@11.0:Windows 10' tests/",
+    "pretty": "npx standard --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
